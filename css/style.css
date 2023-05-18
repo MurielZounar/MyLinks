@@ -1,0 +1,82 @@
+:root {
+  --bg-color: rgb(34, 28, 39);
+  --link-bg-color: rgb(76, 221, 192);
+  --link-bg-color-h: rgb(115, 248, 221);
+  --font: 'Poppins', sans-serif;
+  --link-font-size: 2rem;
+  --link-font-color: rgb(17, 17, 17);
+  --title-font-size: 3rem;
+  --title-font-color: rgb(76, 221, 192);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bg-color);
+}
+
+.title {
+  height: 13rem;
+  font-family: var(--font);
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  color: var(--title-font-color);
+}
+
+.links-list {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link {
+  width: 50rem;
+  height: 5.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  border-radius: 1.5rem;
+  background-color: var(--link-bg-color);
+  font-family: var(--font);
+  font-size: var(--link-font-size);
+  font-weight: 400;
+  text-decoration: none;
+  box-shadow: 0.3rem 0.4rem 0.5rem rgb(0, 0, 0);
+  transition: 0.2s;
+}
+
+.link:hover {
+  width: 51rem;
+  height: 6rem;
+  background-color: var(--link-bg-color-h);
+}
+
+.image {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redmine {
+  width: 3.5rem;
+  height: 2rem;
+}
+
+.circ {
+  clip-path: circle();
+}
+
+p {
+  margin-left: 5rem;
+  color: var(--link-font-color);
+}
